@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PolyWorksScriptSample.pwmacro" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PolyWorksScriptSample.pwmacro">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interop.IMInspectLib">
+      <HintPath>..\..\..\..\..\..\Program Files\InnovMetric\PolyWorks MS 2021\plugins\Interop.IMInspectLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
